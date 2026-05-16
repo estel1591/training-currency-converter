@@ -1,0 +1,67 @@
+{
+  "frameworks": [
+    { "config_file": "next.config.*",     "name": "Next.js",       "language": "TypeScript/JavaScript", "type": "fullstack" },
+    { "config_file": "nuxt.config.*",     "name": "Nuxt",          "language": "TypeScript/JavaScript", "type": "fullstack" },
+    { "config_file": "angular.json",      "name": "Angular",       "language": "TypeScript",            "type": "frontend" },
+    { "config_file": "vite.config.*",     "name": "Vite",          "language": "TypeScript/JavaScript", "type": "frontend" },
+    { "config_file": "svelte.config.*",   "name": "SvelteKit",     "language": "TypeScript/JavaScript", "type": "fullstack" },
+    { "config_file": "remix.config.*",    "name": "Remix",         "language": "TypeScript/JavaScript", "type": "fullstack" },
+    { "config_file": "gatsby-config.*",   "name": "Gatsby",        "language": "TypeScript/JavaScript", "type": "frontend" },
+    { "config_file": "manage.py",         "name": "Django",        "language": "Python",                "type": "fullstack" },
+    { "config_file": "wsgi.py",           "name": "Flask/Django",  "language": "Python",                "type": "backend" },
+    { "config_file": "main.py",           "name": "FastAPI/Flask", "language": "Python",                "type": "backend" },
+    { "config_file": "config/routes.rb",  "name": "Ruby on Rails", "language": "Ruby",                  "type": "fullstack" },
+    { "config_file": "mix.exs",           "name": "Phoenix",       "language": "Elixir",                "type": "fullstack" },
+    { "config_file": "pubspec.yaml",      "name": "Flutter",       "language": "Dart",                  "type": "frontend" }
+  ],
+
+  "package_manifests": [
+    { "file": "package.json",     "language": "JavaScript/TypeScript", "ecosystem": "Node.js / npm" },
+    { "file": "go.mod",           "language": "Go",                    "ecosystem": "Go modules" },
+    { "file": "Cargo.toml",       "language": "Rust",                  "ecosystem": "Cargo" },
+    { "file": "pyproject.toml",   "language": "Python",                "ecosystem": "pip / uv / poetry" },
+    { "file": "requirements.txt", "language": "Python",                "ecosystem": "pip" },
+    { "file": "pom.xml",          "language": "Java",                  "ecosystem": "Maven" },
+    { "file": "build.gradle",     "language": "Java/Kotlin",           "ecosystem": "Gradle" },
+    { "file": "Gemfile",          "language": "Ruby",                  "ecosystem": "Bundler" },
+    { "file": "composer.json",    "language": "PHP",                   "ecosystem": "Composer" },
+    { "file": "mix.exs",          "language": "Elixir",                "ecosystem": "Mix" },
+    { "file": "pubspec.yaml",     "language": "Dart",                  "ecosystem": "pub.dev" }
+  ],
+
+  "test_runners": [
+    { "config_file": "jest.config.*",    "name": "Jest",    "language": "JavaScript/TypeScript" },
+    { "config_file": "vitest.config.*",  "name": "Vitest",  "language": "JavaScript/TypeScript" },
+    { "config_file": "pytest.ini",       "name": "pytest",  "language": "Python" },
+    { "config_file": "pyproject.toml",   "name": "pytest",  "language": "Python",  "key": "tool.pytest" },
+    { "config_file": "*.test.go",        "name": "go test", "language": "Go" },
+    { "config_file": "*_test.go",        "name": "go test", "language": "Go" },
+    { "config_file": "*.spec.ts",        "name": "Jest/Vitest", "language": "TypeScript" },
+    { "config_file": "cypress.config.*", "name": "Cypress", "language": "JavaScript/TypeScript" },
+    { "config_file": "playwright.config.*", "name": "Playwright", "language": "JavaScript/TypeScript" }
+  ],
+
+  "ci_platforms": [
+    { "path": ".github/workflows/",  "name": "GitHub Actions" },
+    { "path": ".gitlab-ci.yml",      "name": "GitLab CI" },
+    { "path": "Jenkinsfile",         "name": "Jenkins" },
+    { "path": ".circleci/",          "name": "CircleCI" },
+    { "path": ".travis.yml",         "name": "Travis CI" },
+    { "path": "azure-pipelines.yml", "name": "Azure Pipelines" },
+    { "path": "bitbucket-pipelines.yml", "name": "Bitbucket Pipelines" }
+  ],
+
+  "databases": [
+    { "dependency": "prisma",       "name": "Prisma ORM",    "note": "check prisma/schema.prisma for DB type" },
+    { "dependency": "typeorm",      "name": "TypeORM" },
+    { "dependency": "sequelize",    "name": "Sequelize" },
+    { "dependency": "mongoose",     "name": "Mongoose",      "db": "MongoDB" },
+    { "dependency": "pg",           "name": "node-postgres", "db": "PostgreSQL" },
+    { "dependency": "mysql2",       "name": "mysql2",        "db": "MySQL" },
+    { "dependency": "better-sqlite3", "name": "better-sqlite3", "db": "SQLite" },
+    { "dependency": "sqlalchemy",   "name": "SQLAlchemy",    "language": "Python" },
+    { "dependency": "django.db",    "name": "Django ORM",    "language": "Python" },
+    { "dependency": "activerecord", "name": "ActiveRecord",  "language": "Ruby" },
+    { "dependency": "ecto",         "name": "Ecto",          "language": "Elixir" }
+  ]
+}
