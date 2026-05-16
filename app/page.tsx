@@ -13,7 +13,7 @@ import { useConverter } from '@/hooks/useConverter';
 export default function Home() {
   const [showHistory, setShowHistory] = useState<boolean>(false);
   
-  // Fetch exchange rates with hooks
+  // Fetch exchange rates
   const { exchangeRates, loading, error } = useExchangeRates();
 
   // Conversion logic
