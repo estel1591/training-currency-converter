@@ -36,6 +36,12 @@ The app is a Next.js 14 (App Router) currency converter with two custom hooks th
 
 **Path alias:** `@/` maps to the repo root (configured in `tsconfig.json` and `jest.config.js`).
 
+## Conventions
+
+- **New types** go in `types/index.ts`, not inline.
+- **Barrel exports:** `components/index.ts` and `hooks/index.ts` re-export everything — when adding a new component or hook, export it from the barrel too.
+- **Commit style:** short, lowercase, imperative (e.g., `add feature`, `fix bug`, `update comment`).
+
 ## Testing
 
 Tests use Jest + jsdom + `@testing-library/react`. MSW (`msw`) is available for API mocking. `jest-axe` is available for accessibility assertions.
